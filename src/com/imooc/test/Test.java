@@ -22,7 +22,7 @@ public class Test {
 		System.out.println("==========================");
 		two.setName("凡凡");
 		two.eat();
-		Animal on = new Animal();
+		//Animal on = new Animal();
 		
 	}
 
