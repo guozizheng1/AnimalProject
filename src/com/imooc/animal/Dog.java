@@ -18,6 +18,8 @@ public class Dog extends Animal {
 	
 	//睡觉
 	public void sleep(){
+		super.eat();//调用的是父类的方法
+		super.species = "犬科";
 		System.out.println(this.getName() + "现在" + this.getMonth() + "个月大，它在睡觉~~~");
 	}
 	

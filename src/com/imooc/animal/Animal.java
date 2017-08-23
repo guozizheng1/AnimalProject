@@ -9,10 +9,11 @@ public class Animal {
 	
 	private String name;//昵称
 	protected int month;//年龄
-	private String species;//品种
+	public String species;//品种
 	
 	public int temp = 15;
 	
+	//父类的构造方法不允许被继承、不允许被重写//?
 	public Animal(){
 		
 	}
