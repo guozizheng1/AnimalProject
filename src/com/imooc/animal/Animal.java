@@ -32,6 +32,8 @@ public class Animal {
 	}
 	
 	public Animal(String name, int month) {
+		this.name = name;
+		this.month = month;
 		System.out.println("我是父类的带参构造");
 	}
 
