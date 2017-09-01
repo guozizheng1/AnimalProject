@@ -69,5 +69,28 @@ public class Animal {
 	public void eat(String name){
 		System.out.println(name + "在吃东西");
 	}
+	
+	//重写Object类的equals方法
+	public boolean equals(Object obj) {
+		if(obj==null) {
+			return false;
+		}//该段代码防止输入为空报空指针异常
+		Animal tmp = (Animal)obj;
+		if((this.getName().equals(tmp.getName())) && (this.getMonth()==tmp.getMonth()))
+			return true;
+		else
+			return false;
+	}
+	
+	//重载equals方法
+	public boolean equals(Animal obj) {
+		if(obj==null) {
+			return false;
+		}//该段代码防止输入为空报空指针异常
+		if((this.getName().equals(obj.getName())) && (this.getMonth()==obj.getMonth()))
+			return true;
+		else
+			return false;
+	}
 
 }
