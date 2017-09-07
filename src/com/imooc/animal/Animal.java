@@ -82,7 +82,7 @@ public class Animal {
 			return false;
 	}
 	
-	//重载equals方法
+	//重写equals方法
 	public boolean equals(Animal obj) {
 		if(obj==null) {
 			return false;
@@ -91,6 +91,12 @@ public class Animal {
 			return true;
 		else
 			return false;
+	}
+	
+	//重写toString方法
+	public String toString(){
+		return "昵称：" + this.getName() + ";年龄：" + this.getMonth();
+		
 	}
 
 }
