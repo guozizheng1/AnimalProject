@@ -94,6 +94,7 @@ public class Animal {
 	}
 	
 	//重写toString方法
+	@Override //重写注解
 	public String toString(){
 		return "昵称：" + this.getName() + ";年龄：" + this.getMonth();
 		
