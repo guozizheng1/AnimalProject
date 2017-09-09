@@ -99,5 +99,9 @@ public class Animal {
 		return "昵称：" + this.getName() + ";年龄：" + this.getMonth();
 		
 	}
+	
+	public Animal create(){
+		return new Animal();
+	}
 
 }

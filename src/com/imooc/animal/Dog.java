@@ -32,7 +32,7 @@ public class Dog extends Animal {
 	 *
 	 *方法的重写：
 	 * 1.有继承关系的子类中（子类重写父类的方法)
-	 * 2.方法名相同，参数列表完全同（参数顺序、个数、类型）,方法的返回值相同
+	 * 2.方法名相同，参数列表完全同（参数顺序、个数、类型）,方法的返回值可以允许是子类类型
 	 * 3.访问修饰符，访问范围需要大于等于父类的访问范围
 	 * 4.于方法的参数名无关
 	 */
@@ -49,5 +49,10 @@ public class Dog extends Animal {
 		System.out.println(month + "最近没有食欲~~~");
 	}
 	
+	@Override
+	public Dog create() {
+		// TODO Auto-generated method stub
+		return new Dog();
+	}
 
 }
